@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "Efficient Vector-Based Label Propagation for Massive Low-Rank Graphs"
+authors:
+  - name: "Anonymous"
+date-released: 2026-02-22
+version: "0.1.0"
+message: "If you use this artifact, please cite the paper."

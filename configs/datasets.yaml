@@ -1,0 +1,20 @@
+flickr:
+  name: flickr
+  module: vlp.data.flickr
+  loader: load_flickr
+  fractions: [0.01, 0.02, 0.05, 0.1]
+amazon:
+  name: amazon_products
+  module: vlp.data.amazon_products
+  loader: load_amazon_products
+  fractions: [0.002, 0.004, 0.006, 0.008, 0.01, 0.5, 1.0]
+yelp:
+  name: yelp
+  module: vlp.data.yelp
+  loader: load_yelp
+  fractions: [0.004, 0.008, 0.012, 0.016, 0.02, 0.5, 1.0]
+taobao:
+  name: taobao
+  module: vlp.data.taobao
+  loader: load_taobao
+  fractions: [0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.5, 1.0]

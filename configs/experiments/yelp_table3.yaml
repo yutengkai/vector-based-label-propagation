@@ -1,0 +1,6 @@
+# Yelp — Table 3
+dataset: yelp
+fractions: [0.004, 0.008, 0.012, 0.016, 0.02, 0.5, 1.0]
+iters: 1000
+repeats: 5
+classes: 50

@@ -1,0 +1,6 @@
+# Amazon Products — Table 2
+dataset: amazon
+fractions: [0.002, 0.004, 0.006, 0.008, 0.01, 0.5, 1.0]
+iters: 1000
+repeats: 5
+classes: 50

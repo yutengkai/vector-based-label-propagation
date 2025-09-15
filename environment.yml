@@ -1,0 +1,21 @@
+name: vlp
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - pytorch
+  - pytorch-cuda=12.1  # remove or change if using CPU-only
+  - pip
+  - pip:
+      - torch-geometric
+      - scikit-learn
+      - scikit-network
+      - tqdm
+      - pyyaml
+      - psutil
+      - matplotlib
