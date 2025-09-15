@@ -16,9 +16,7 @@ Given node embeddings $V\in\mathbb{R}^{n\times d}$, we work with a non‑negativ
 
 One VLP iteration updates label matrix $Y^{(t)}\in\mathbb{R}^{n\times c}$ as:
 
-$$
-Y^{(t+1)} = \text{inv\_deg} \odot \Big( V (V^\top Y^{(t)}) - \text{self\_loop} \odot Y^{(t)} \Big),
-$$
+$$Y^{(t+1)} = \text{inv\_deg} \odot \Big( V (V^\top Y^{(t)}) - \text{self\_loop} \odot Y^{(t)} \Big)$$,
 
 where $\odot$ denotes element‑wise operations with appropriate broadcasting. This produces the same result as adjacency‑based LP on the corresponding dense graph without materializing $A$.
 
