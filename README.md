@@ -1,6 +1,6 @@
 # VLP: Efficient Vector‑Based Label Propagation for Massive Low‑Rank Graphs
 
-VLP is a reference implementation and reproducibility package for **vector‑based label propagation** on **low‑rank graphs**, where the adjacency has the form $A = VV^\top$. Instead of constructing an $n\times n$ adjacency, VLP performs propagation directly in the embedding space using two dense matrix multiplications per iteration. This reduces memory from $O(n^2)$ to $O(nd)$ and closely follows the algorithm described in the accompanying paper.
+"""VLP is a reference implementation and reproducibility package for **vector‑based label propagation** on **low‑rank graphs**, where the adjacency has the form $A = VV^\top$. Instead of constructing an $n\times n$ adjacency, VLP performs propagation directly in the embedding space using two dense matrix multiplications per iteration. This reduces memory from $O(n^2)$ to $O(nd)$ and closely follows the algorithm described in the accompanying paper.
 
 > **Scope.** The artifact evaluates **linear (numeric) label propagation** baselines (e.g., Zhu & Ghahramani–style) implemented in scikit‑learn, scikit‑network, and PyTorch Geometric. Voting‑style LP used for community detection is out of scope here.
 
@@ -16,9 +16,12 @@ Given node embeddings $V\in\mathbb{R}^{n\times d}$, we work with a non‑negativ
 
 One VLP iteration updates label matrix $Y^{(t)}\in\mathbb{R}^{n\times c}$ as:
 
-$Y^{(t+1)} = \text{inv\_deg} \odot \Big( V (V^\top Y^{(t)}) - \text{self\_loop} \odot Y^{(t)} \Big)$,
+$$
+Y^{(t+1)} = \text{inv deg} \odot \Big( V (V^\top Y^{(t)}) - \text{self loop} \odot Y^{(t)} \Big),
+$$
 
-where $\odot$ denotes element‑wise operations with appropriate broadcasting. This produces the same result as adjacency‑based LP on the corresponding dense graph without materializing $A$.
+where $\odot$ denotes element‑wise operations with appropriate broadcasting. This produces the same result as adjacency‑based LP on the corresponding dense graph without materializing $A$."""
+
 
 ---
 
